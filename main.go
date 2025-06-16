@@ -1,4 +1,4 @@
-package endpointservices
+package upstreamservice
 
 import (
 	"encoding/json"
