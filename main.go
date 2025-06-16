@@ -8,6 +8,7 @@ import (
 	"strings"
 )
 
+// This is a server side service
 const WINDYAPI_ENDPOINT = "https://api.windy.com/api/point-forecast/v2"
 
 func GetSingleResponseByLatAndLong(latitude, longitude float64) (string, error) {
