@@ -8,10 +8,9 @@ import (
 	"strings"
 )
 
-// This is a server side service
 const WINDYAPI_ENDPOINT = "https://api.windy.com/api/point-forecast/v2"
 
-func GetSingleResponseByLatAndLong(latitude, longitude float64) (string, error) {
+func GetWeather(latitude, longitude float64) (string, error) {
 	buildReq := buildAPIRequest(latitude, longitude)
 	req, err := http.NewRequest("POST", WINDYAPI_ENDPOINT, strings.NewReader(buildReq))
 	if err != nil {
