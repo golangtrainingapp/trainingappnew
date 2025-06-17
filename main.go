@@ -1,4 +1,4 @@
-package upstreamservice
+package windyapi
 
 import (
 	"encoding/json"
