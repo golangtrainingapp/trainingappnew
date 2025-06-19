@@ -1,4 +1,4 @@
-package windyapi
+package windy
 
 import (
 	"encoding/json"
